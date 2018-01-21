@@ -27,4 +27,84 @@
     font-weight: normal;
 }
 
+.advisors{
+    background: linear-gradient(90deg, #28a994, #84d688);
+    padding: 95px 0px;
 
+    .pig{
+        background-image: url(../img/pig.png);
+        background-repeat: no-repeat;
+        background-position: top 65px right;
+    .wraper{
+        width: 25%;
+        padding: 0px 25px;
+        posithion: relative;
+    }
+    .m-w-1330{
+        margin: 0 auto;
+        max-width: 1330px;
+        h3{
+            text-align: center;
+            color: #fff;
+            font-size: 48px;
+            font-family: "BebasNeueReg";
+            position: relative;
+            margin-bottom: 15px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background: #fff;
+    }
+        }
+        p{
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-family: "Montserrat-Regular";
+            padding-bottom: 60px;
+        }
+        .foto{
+            width: 90px;
+            height: 90px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .flex-one{
+        display: flex;
+        justify-content:space-between; 
+        }
+        .m-w-23{
+            background-color: #fff;
+            padding-top: 25px;
+        h3{
+            text-align: center;
+            font-family: "BebasNeueReg";
+            color: #0c142b;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+        h4{
+            text-align: center;
+            font-family: "Montserrat-Regular";
+            color: #b7b7b9;
+            font-size: 14px;
+        }
+        p{
+            text-align: center;
+            font-family: "Montserrat-ExtraLight";
+            color: #827d7d;
+            padding: 60px 15px 80px 15px;
+            font-size: 14px;
+        }
+        }
+    }
+}}
