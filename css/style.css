@@ -1,3 +1,106 @@
+.butt-link {
+  width: 295px;
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: center;
+  padding: 15px 0;
+  border: 2px solid #fff;
+  display: block;
+  border-radius: 50px;
+  font-family: "BebasNeueReg";
+  color: #fff;
+  background: linear-gradient(90deg, #309081, #56b855); }
+  .butt-link:hover {
+    color: #fff; }
 
+.sec-lvl-1 {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(90deg, #262f3f, #0c101e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .sec-lvl-1 .menu-wr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px 0 80px;
+    z-index: 10; }
+    .sec-lvl-1 .menu-wr .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .sec-lvl-1 .menu-wr .menu ul {
+        display: flex;
+        margin: 0;
+        list-style: none; }
+        .sec-lvl-1 .menu-wr .menu ul a {
+          display: block;
+          padding: 35px 16px;
+          transition: 0.3s;
+          font-family: "BebasNeueReg";
+          color: #fff;
+          font-size: 18px;
+          letter-spacing: 1px; }
+          .sec-lvl-1 .menu-wr .menu ul a:hover {
+            color: #56b754; }
+          .sec-lvl-1 .menu-wr .menu ul a.active {
+            color: #56b754; }
+  .sec-lvl-1 .for-butt-and-logo {
+    position: relative;
+    z-index: 10; }
+  .sec-lvl-1 .scroll-down {
+    position: absolute;
+    bottom: 65%;
+    z-index: 10;
+    right: 10px;
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: center; }
+    .sec-lvl-1 .scroll-down:before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: calc(100% + 15px);
+      top: 50%;
+      width: 120px;
+      height: 1px;
+      background: #fff;
+      line-height: 14px; }
+  .sec-lvl-1 .img-rotate {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation: rotate-img 45s infinite linear; }
+  .sec-lvl-1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-image: url(../img/hard-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 576px; }
+
+@keyframes rotate-img {
+  0% {
+    transform: translate(-50%, -50%) rotate(0); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+@-webkit-keyframes rotate-img {
+  0% {
+    transform: translate(-50%, -50%) rotate(0); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */
