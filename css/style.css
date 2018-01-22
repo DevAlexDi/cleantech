@@ -150,9 +150,9 @@
       position: absolute;
       width: 912px;
       height: 694px;
-      top: 0;
+      top: 65px;
       left: 65%;
-      background-image: url(../img/mac.png);
+      background-image: url(../img/111111.png);
       background-repeat: no-repeat; }
   .sec-lvl-2 .sliders-wr {
     width: 65%;
@@ -600,5 +600,203 @@
       display: block;
       padding: 2px 16px;
       font-size: 16px; }
+
+.sec-fixed-menu {
+  position: fixed;
+  top: -800px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .sec-fixed-menu.js-fixed {
+    top: 0; }
+  .sec-fixed-menu .left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .sec-fixed-menu .left-side img {
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+    .sec-fixed-menu .left-side .name {
+      padding-left: 10px;
+      font-family: "BebasNeueReg";
+      font-size: 22px;
+      color: #539b07; }
+  .sec-fixed-menu .menu-wr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 80px 0 80px;
+    z-index: 10;
+    background: #fff;
+    -webkit-box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.05); }
+    .sec-fixed-menu .menu-wr .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .sec-fixed-menu .menu-wr .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        list-style: none; }
+        .sec-fixed-menu .menu-wr .menu ul a {
+          display: block;
+          padding: 28px 16px;
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+          font-family: "BebasNeueReg";
+          color: #595d68;
+          font-size: 18px;
+          letter-spacing: 1px; }
+          .sec-fixed-menu .menu-wr .menu ul a:hover {
+            color: #56b754; }
+          .sec-fixed-menu .menu-wr .menu ul a.active {
+            color: #56b754; }
+
+.sec-lvl-16 {
+  padding-top: 90px; }
+  .sec-lvl-16 .for-m-w {
+    max-width: 900px;
+    margin: 0 auto; }
+    .sec-lvl-16 .for-m-w h4 {
+      font-family: "BebasNeueReg";
+      text-align: center;
+      font-weight: normal;
+      font-size: 56px;
+      letter-spacing: 0.4px;
+      text-decoration: underline;
+      margin-bottom: 50px; }
+    .sec-lvl-16 .for-m-w .port-wr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .sec-lvl-16 .for-m-w .port-wr .one-port {
+        padding: 0 25px;
+        margin-bottom: 50px;
+        width: 50%;
+        cursor: pointer; }
+        .sec-lvl-16 .for-m-w .port-wr .one-port .port {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          background-color: #ffffff;
+          -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+                  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+          height: 152px; }
+          .sec-lvl-16 .for-m-w .port-wr .one-port .port .left-side {
+            width: 35%;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; }
+            .sec-lvl-16 .for-m-w .port-wr .one-port .port .left-side img {
+              margin: 0 auto; }
+          .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side {
+            width: 100%; }
+            .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side img {
+              margin: 0 auto 10px auto;
+              max-width: 240px; }
+            .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side p {
+              margin: 0; }
+              .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side p.my-center {
+                text-align: center; }
+              .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side p.name {
+                font-family: "BebasNeueReg";
+                font-size: 36px;
+                letter-spacing: 0.3px;
+                line-height: 36px; }
+              .sec-lvl-16 .for-m-w .port-wr .one-port .port .right-side p.sec-desc {
+                font-family: "BebasNeueReg";
+                font-size: 20px;
+                line-height: 1.5;
+                letter-spacing: 0.2px; }
+
+.modal-dialog {
+  width: 700px;
+  margin: 30px auto; }
+
+.modal-content {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+.modal-header {
+  border: none;
+  padding-top: 30px;
+  position: relative; }
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.modal.modal-company .company-logo {
+  margin-top: 15px;
+  margin-left: 25px; }
+
+.modal.modal-company .company-logo img {
+  max-height: 63px; }
+
+.modal button.close {
+  text-shadow: none;
+  background: none;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  z-index: 10;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1; }
+
+.modal-body {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #586A8F; }
+
+.modal.modal-company .company-container {
+  margin-left: 10px;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px; }
+
+.modal.modal-company .company-container .row {
+  margin-bottom: 20px; }
+
+.modal {
+  background: rgba(0, 0, 0, 0.9);
+  font-family: "Montserrat-Regular"; }
+  .modal a {
+    color: #f23545; }
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2; }
+
+.modal button.close svg {
+  width: 40px;
+  height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

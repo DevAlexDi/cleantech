@@ -10,9 +10,9 @@
     font-family: "BebasNeueReg";
     color: #fff;
     background: linear-gradient(90deg, #309081, #56b855);
-     -webkit-box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
--moz-box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
-box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
     &:hover {
         color: #fff;
     }
@@ -59,6 +59,7 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
             }
         }
     }
+    
     .for-butt-and-logo {
         position: relative;
         z-index: 10;
@@ -148,9 +149,9 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
             position: absolute;
             width: 912px;
             height: 694px;
-            top: 0;
+            top: 65px;
             left: 65%;
-            background-image: url(../img/mac.png);
+            background-image: url(../img/111111.png);
             background-repeat: no-repeat;
         }
     }
@@ -420,11 +421,9 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
                 top: 50%;
                 width: 1146px;
                 height: 2787px;
-                
                 background-image: url(../img/hard-bg-2.png);
                 background-repeat: no-repeat;
-                    top: -1015px;
-                
+                top: -1015px;
             }
             p {
                 position: relative;
@@ -493,7 +492,6 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
     z-index: 10;
 }
 
-
 .footer {
     padding: 0;
     margin-top: -50px;
@@ -506,7 +504,7 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    &:before{
+    &:before {
         content: '';
         display: block;
         position: absolute;
@@ -517,7 +515,6 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
         background-image: url(../img/hard-bg-3.png);
         background-repeat: no-repeat;
     }
-    
     .for-flex-footer {
         margin-bottom: 10px;
         display: flex;
@@ -581,17 +578,16 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
     }
 }
 
-.for-flag{
+.for-flag {
     width: 50px;
     position: relative;
     color: #fff;
     font-family: "BebasNeueReg";
     letter-spacing: 1px;
-    .dropdown-wrch{
+    .dropdown-wrch {
         display: none;
-        
     }
-    .flag-vr{
+    .flag-vr {
         padding-left: 22px;
         padding-right: 15px;
         text-transform: uppercase;
@@ -606,9 +602,8 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
             background: url(../img/en.png);
             background-size: cover;
             background-repeat: no-repeat;
-            
         }
-        &:after{
+        &:after {
             content: '';
             position: absolute;
             right: 0;
@@ -620,11 +615,10 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
             border-color: #fff transparent transparent transparent;
         }
     }
-    .pick-lang{
+    .pick-lang {
         position: absolute;
         left: 0;
         border: 1px solid #ffffff;
-        
         z-index: 20;
         top: 100%;
         a {
@@ -636,4 +630,211 @@ box-shadow: -5px -10px 36px -5px rgba(0,0,0,0.4);
             font-size: 16px;
         }
     }
+}
+
+.sec-fixed-menu {
+    position: fixed;
+    top: -800px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    transition: 1s;
+    &.js-fixed{
+        top: 0;
+    }
+    .left-side {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+        }
+        .name {
+            padding-left: 10px;
+            font-family: "BebasNeueReg";
+            font-size: 22px;
+            color: #539b07;
+        }
+    }
+    .menu-wr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 80px 0 80px;
+        z-index: 10;
+        background: #fff;
+            -webkit-box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.05);
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul {
+                display: flex;
+                margin: 0;
+                list-style: none;
+                a {
+                    display: block;
+                    padding: 28px 16px;
+                    transition: 0.3s;
+                    font-family: "BebasNeueReg";
+                    color: #595d68;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    &:hover {
+                        color: #56b754;
+                    }
+                    &.active {
+                        color: #56b754;
+                    }
+                }
+            }
+        }
+    }
+}
+.sec-lvl-16 {
+    padding-top: 90px;
+    .for-m-w {
+        max-width: 900px;
+        margin: 0 auto;
+        h4 {
+            font-family: "BebasNeueReg";
+            text-align: center;
+            font-weight: normal;
+            font-size: 56px;
+            letter-spacing: 0.4px;
+            text-decoration: underline;
+            margin-bottom: 50px;
+        }
+        .port-wr {
+            display: flex;
+            flex-wrap: wrap;
+            .one-port {
+                padding: 0 25px;
+                margin-bottom: 50px;
+                width: 50%;
+                cursor: pointer;
+                .port {
+                    display: flex;
+                    align-items: center;
+                    background-color: #ffffff;
+                    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+                    height: 152px;
+                    .left-side {
+                        width: 35%;
+                        flex-shrink: 0;
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                    .right-side {
+                        width: 100%;
+                        img {
+                            margin: 0 auto 10px auto;
+                            max-width: 240px;
+                        }
+                        p {
+                            margin: 0;
+                            &.my-center {
+                                text-align: center;
+                            }
+                            &.name {
+                                font-family: "BebasNeueReg";
+                                font-size: 36px;
+                                letter-spacing: 0.3px;
+                                line-height: 36px;
+                            }
+                            &.sec-desc {
+                                font-family: "BebasNeueReg";
+                                font-size: 20px;
+                                line-height: 1.5;
+                                letter-spacing: 0.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-dialog {
+    width: 700px;
+        margin: 30px auto;
+}
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.modal-header {
+    border: none;
+    padding-top: 30px;
+    position: relative;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal.modal-company .company-logo {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.modal.modal-company .company-logo img {
+    max-height: 63px;
+}
+.modal button.close {
+    text-shadow: none;
+    background: none;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    z-index: 10;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #586A8F;
+}
+.modal.modal-company .company-container {
+    margin-left: 10px;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.modal.modal-company .company-container .row {
+    margin-bottom: 20px;
+}
+.modal {
+    background: rgba(0,0,0,0.9);
+         font-family: "Montserrat-Regular";
+    a{
+        color: #f23545;
+    }
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.modal button.close svg {
+    width: 40px;
+    height: 40px;
 }
