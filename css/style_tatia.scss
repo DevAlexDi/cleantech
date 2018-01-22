@@ -368,6 +368,11 @@ $dark_blue: #0c142b;
     margin: 0;
     width: auto;
     height: auto;
+    position: relative;
+
+    &:before {
+      content: '';
+    }
   }
   #timeline .timeline_block li:nth-child(even) div {
     flex-direction: column-reverse;
@@ -377,9 +382,10 @@ $dark_blue: #0c142b;
     position: relative;
     bottom: auto;
     top: 0;
-    left: 25px!important;
+    left: 0!important;
     right: auto;
     width: 100%;
+    padding-left: 25px;
 
     span, p {
       text-align: left;

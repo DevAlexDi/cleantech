@@ -274,7 +274,10 @@
   #timeline .timeline_block li {
     margin: 0;
     width: auto;
-    height: auto; }
+    height: auto;
+    position: relative; }
+    #timeline .timeline_block li:before {
+      content: ''; }
 
   #timeline .timeline_block li:nth-child(even) div {
     flex-direction: column-reverse; }
@@ -284,9 +287,10 @@
     position: relative;
     bottom: auto;
     top: 0;
-    left: 25px !important;
+    left: 0 !important;
     right: auto;
-    width: 100%; }
+    width: 100%;
+    padding-left: 25px; }
     #timeline .timeline_block li:nth-child(even) div span, #timeline .timeline_block li:nth-child(even) div p,
     #timeline .timeline_block li:nth-child(odd) div span,
     #timeline .timeline_block li:nth-child(odd) div p {
