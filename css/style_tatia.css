@@ -1,0 +1,116 @@
+.max_width_container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 100px; }
+
+.zag {
+  font-family: BebasNeueReg;
+  font-size: 80px;
+  color: #0c142b;
+  position: relative;
+  padding-bottom: 15px; }
+  .zag:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    background-color: #56b854; }
+
+#who_should_apply {
+  padding-top: 50px;
+  color: #0c142b; }
+  #who_should_apply .zag {
+    max-width: 345px; }
+  #who_should_apply .small_zag {
+    font: bold 16px Montserrat-Regular;
+    margin-top: 15px; }
+  #who_should_apply .center_text {
+    text-align: center;
+    font: bold 18px Montserrat-Regular;
+    max-width: 615px;
+    margin: 0 auto; }
+  #who_should_apply ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #who_should_apply ul.icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      margin-bottom: 55px; }
+      #who_should_apply ul.icons li {
+        font: bold 18px Montserrat-Regular;
+        color: #777777;
+        text-align: center;
+        width: 21%;
+        position: relative; }
+        #who_should_apply ul.icons li .dots {
+          position: absolute;
+          left: -107px;
+          top: 65px; }
+          #who_should_apply ul.icons li .dots img {
+            margin: 0;
+            max-width: 100%; }
+        #who_should_apply ul.icons li img {
+          margin-left: 25px; }
+        #who_should_apply ul.icons li span {
+          display: block;
+          padding-top: 15px; }
+    #who_should_apply ul.texts {
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-around;
+      color: #0c142b;
+      font: 30px BebasNeueReg; }
+
+@media (max-width: 1480px) {
+  .max_width_container {
+    width: 100%;
+    padding: 0 35px; }
+
+  #who_should_apply ul.icons li .dots {
+    max-width: 150px;
+    left: -103px; } }
+@media (max-width: 1400px) {
+  #who_should_apply ul.icons li .dots {
+    left: -96px; } }
+@media (max-width: 1299px) {
+  #who_should_apply ul.icons li .dots {
+    max-width: 130px;
+    left: -84px; } }
+@media (max-width: 1199px) {
+  #who_should_apply ul.icons li .dots {
+    display: none; } }
+@media (max-width: 991px) {
+  .max_width_container {
+    padding: 0 15px; }
+
+  #who_should_apply ul.icons {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    justify-content: space-around; }
+
+  #who_should_apply ul.icons li {
+    width: 45%;
+    margin-bottom: 25px; }
+
+  #who_should_apply ul.texts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 55px; }
+
+  #who_should_apply ul.texts li {
+    width: 45%;
+    margin-bottom: 25px; } }
+@media (max-width: 767px) {
+  #who_should_apply ul.icons li {
+    width: 100%; }
+
+  #who_should_apply ul.texts li {
+    width: 100%; } }
+
+/*# sourceMappingURL=style_tatia.css.map */
