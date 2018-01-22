@@ -86,16 +86,12 @@ $(document).ready(function () {
         }
     });
 
-<<<<<<< HEAD
-    $('#what_we_offer .offer .txt').click(function () {
-=======
     var cp_tl = $('#checkpoints .cp_timeline li:nth-child(2) p').html();
     if (cp_tl.length > 93) {
         $('#checkpoints .cp_timeline li:nth-child(2) p').html(cp_tl.substr(0, 93));
     }
 
     $('#what_we_offer .offer .txt').click(function() {
->>>>>>> 20bf48ffc82e41b8cebd870edf017537f5f0f7e7
         if (!$(this).hasClass('opened')) {
             $(this).text($(this).attr('data-full'));
             $(this).addClass('opened');
