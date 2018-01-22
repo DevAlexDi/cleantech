@@ -68,9 +68,14 @@
     #who_should_apply ul.texts {
       margin-top: 65px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       color: #0c142b;
       font: 30px BebasNeueReg; }
+      #who_should_apply ul.texts li {
+        width: 25%;
+        text-align: center;
+        margin-bottom: 20px; }
 
 #timeline {
   padding-top: 100px;
@@ -264,23 +269,32 @@
       #what_we_offer .offer_flex .offer .txt {
         font: bold 18px Montserrat-Regular;
         color: #9b9c9c;
-        position: relative;
-        cursor: pointer; }
-        #what_we_offer .offer_flex .offer .txt:after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 9px 9.5px 0 9.5px;
-          border-color: #90dc5a transparent transparent transparent;
-          position: relative;
-          top: 17px;
-          margin-left: 20px; }
-        #what_we_offer .offer_flex .offer .txt.opened:after {
-          display: inline-block;
-          top: 4px;
-          border-width: 9.5px 9px 9.5px 0 !important;
-          border-color: transparent #90dc5a transparent transparent !important; }
+        position: relative; }
+        #what_we_offer .offer_flex .offer .txt.opening {
+          cursor: pointer; }
+          #what_we_offer .offer_flex .offer .txt.opening:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 9.5px 0 9.5px;
+            border-color: #90dc5a transparent transparent transparent;
+            position: relative;
+            top: 17px;
+            margin-left: 20px; }
+        #what_we_offer .offer_flex .offer .txt.opened {
+          cursor: pointer; }
+          #what_we_offer .offer_flex .offer .txt.opened:after {
+            display: inline-block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            top: 4px;
+            position: relative;
+            margin-left: 20px;
+            border-width: 9.5px 9px 9.5px 0 !important;
+            border-color: transparent #90dc5a transparent transparent !important; }
 
 #checkpoints .zag {
   max-width: 420px; }
