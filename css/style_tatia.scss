@@ -514,6 +514,12 @@ $dark_blue: #0c142b;
         }
       }
 
+      &:nth-child(3) {
+        .cp_tl {
+          width: 255px;
+        }
+      }
+
       &:nth-child(1), &:nth-child(3) {
         .cp_tl {
           bottom: 85px;
