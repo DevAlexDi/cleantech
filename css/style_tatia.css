@@ -420,14 +420,6 @@
   position: relative;
   z-index: 100;
   color: #0c142b; }
-  #accelerator_tl:after {
-    content: '';
-    width: 282px;
-    height: 761px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: url(../img/robot.jpg) no-repeat; }
   #accelerator_tl .head {
     display: flex;
     align-items: flex-end; }

@@ -595,16 +595,6 @@ $dark_blue: #0c142b;
   z-index: 100;
   color: $dark_blue;
 
-  &:after {
-    content: '';
-    width: 282px;
-    height: 761px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: url(../img/robot.jpg) no-repeat;
-  }
-
   .head {
     display: flex;
     align-items: flex-end;
