@@ -95,9 +95,16 @@ $dark_blue: #0c142b;
     &.texts {
       margin-top: 65px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       color: $dark_blue;
       font: 30px BebasNeueReg;
+
+      li {
+        width: 25%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -372,25 +379,35 @@ $dark_blue: #0c142b;
         font: bold 18px Montserrat-Regular;
         color: #9b9c9c;
         position: relative;
-        cursor: pointer;
 
-        &:after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 9px 9.5px 0 9.5px;
-          border-color: #90dc5a transparent transparent transparent;
-          position: relative;
-          top: 17px;
-          margin-left: 20px;
+        &.opening {
+          cursor: pointer;
+
+          &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 9.5px 0 9.5px;
+            border-color: #90dc5a transparent transparent transparent;
+            position: relative;
+            top: 17px;
+            margin-left: 20px;
+          }
         }
 
         &.opened {
+          cursor: pointer;
 
           &:after {
             display: inline-block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
             top: 4px;
+            position: relative;
+            margin-left: 20px;
             border-width: 9.5px 9px 9.5px 0!important;
             border-color: transparent #90dc5a transparent transparent!important;
           }
@@ -494,6 +511,12 @@ $dark_blue: #0c142b;
           font: bold 24px BebasNeueReg;
           color: $dark_blue;
           padding-bottom: 15px;
+        }
+      }
+
+      &:nth-child(3) {
+        .cp_tl {
+          width: 255px;
         }
       }
 

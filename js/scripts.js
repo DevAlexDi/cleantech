@@ -82,6 +82,7 @@ $(document).ready(function () {
         var newsText = newsTextBlock.text();
         if (newsText.length > size) {
             newsTextBlock.attr('data-full', newsTextBlock.text());
+            newsTextBlock.addClass('opening');
             newsTextBlock.text(newsText.substr(0, size));
         }
     });
@@ -93,14 +94,17 @@ $(document).ready(function () {
 
 
     $('#what_we_offer .offer .txt').click(function() {
-        if (!$(this).hasClass('opened')) {
-            $(this).text($(this).attr('data-full'));
-            $(this).addClass('opened');
-        } else {
-            if ($(this).text().length > size) {
-                $(this).text($(this).text().substr(0, size));
+        if ($(this).hasClass('opened') || $(this).hasClass('opening')) {
+            if (!$(this).hasClass('opened')) {
+                $(this).text($(this).attr('data-full'));
+                $(this).addClass('opened');
+            } else {
+                if ($(this).text().length > size) {
+                    $(this).text($(this).text().substr(0, size));
+                }
+                $(this).removeClass('opened');
+                $(this).addClass('opening');
             }
-            $(this).removeClass('opened');
         }
     });
     $('#checkpoints .cp_timeline li:nth-child(2) p').click(function () {
