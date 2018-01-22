@@ -1,3 +1,26 @@
+@media (max-width: 991px) {
+  .footer .for-flex-footer .soc-set-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
+  .footer .for-flex-footer .soc-set-links a {
+    padding-right: 35px; } }
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 30px;
+    margin: 0; }
+
+  .footer .for-flex-footer {
+    display: block; }
+    .footer .for-flex-footer .left-side {
+      margin-bottom: 30px; }
+
+  .for-flag {
+    bottom: 6px;
+    right: 5px; }
+
+  .footer:before {
+    display: none; } }
 
 /*# sourceMappingURL=media.css.map */

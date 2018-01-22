@@ -92,6 +92,7 @@ $(document).ready(function () {
         $('#checkpoints .cp_timeline li:nth-child(2) p').html(cp_tl.substr(0, 93));
     }
 
+
     $('#what_we_offer .offer .txt').click(function() {
         if ($(this).hasClass('opened') || $(this).hasClass('opening')) {
             if (!$(this).hasClass('opened')) {
@@ -106,12 +107,11 @@ $(document).ready(function () {
             }
         }
     });
-    $('#checkpoints .cp_timeline li:nth-child(2) p').click(function() {
+    $('#checkpoints .cp_timeline li:nth-child(2) p').click(function () {
         if (!$(this).hasClass('opened')) {
             $(this).html(cp_tl);
             $(this).addClass('opened');
-        }
-        else {
+        } else {
             if (cp_tl.length > 93) {
                 $(this).html(cp_tl.substr(0, 93));
             }
@@ -220,9 +220,20 @@ $(document).ready(function () {
     scrFunc();
 
 
-$(window).scroll(function(){
-    scrFunc();
-});
+    $(window).scroll(function () {
+        scrFunc();
+    });
 
+    var flag_change = true;
+    $('.flag-vr').click(function () {
+        if (flag_change) {
+            $(".dropdown-wrch").slideDown(0);
+            flag_change = false;
+        } else {
+            $(".dropdown-wrch").slideUp(0);
+            flag_change = true;
+        }
+
+    });
 
 });
