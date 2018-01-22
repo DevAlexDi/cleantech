@@ -538,6 +538,35 @@ $dark_blue: #0c142b;
   }
 }
 
+#network {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .network_block {
+    display: flex;
+    justify-content: space-between;
+
+    .img {
+      width: 53%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .text {
+      width: 46%;
+      color: $dark_blue;
+      font: bold 18px Montserrat-Regular;
+      padding-top: 100px;
+
+      .zag {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
 
 /* MEDIA */
 
@@ -640,6 +669,15 @@ $dark_blue: #0c142b;
 
   #checkpoints .cp_timeline {
     padding: 0 200px 0 50px;
+  }
+
+  #network .network_block {
+    display: block;
+  }
+  #network .network_block .img,
+  #network .network_block .text {
+    width: 100%;
+    padding-top: 0;
   }
 }
 @media (max-width: 991px) {
@@ -853,5 +891,9 @@ $dark_blue: #0c142b;
     p, span {
       text-align: left;
     }
+  }
+
+  #network {
+    padding-top: 0;
   }
 }

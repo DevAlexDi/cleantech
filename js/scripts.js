@@ -86,14 +86,13 @@ $(document).ready(function () {
         }
     });
 
-
     var cp_tl = $('#checkpoints .cp_timeline li:nth-child(2) p').html();
     if (cp_tl.length > 93) {
         $('#checkpoints .cp_timeline li:nth-child(2) p').html(cp_tl.substr(0, 93));
     }
 
-    $('#what_we_offer .offer .txt').click(function () {
 
+    $('#what_we_offer .offer .txt').click(function() {
         if (!$(this).hasClass('opened')) {
             $(this).text($(this).attr('data-full'));
             $(this).addClass('opened');
