@@ -9,7 +9,10 @@
   border-radius: 50px;
   font-family: "BebasNeueReg";
   color: #fff;
-  background: linear-gradient(90deg, #309081, #56b855); }
+  background: linear-gradient(90deg, #309081, #56b855);
+  -webkit-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4); }
   .butt-link:hover {
     color: #fff; }
 
@@ -346,10 +349,9 @@
         top: 50%;
         width: 1146px;
         height: 2787px;
-        transform: translateY(-50%);
         background-image: url(../img/hard-bg-2.png);
         background-repeat: no-repeat;
-        top: calc(50% - 46px); }
+        top: -1015px; }
       .main-counters .rel-wrapp .right-side p {
         position: relative;
         z-index: 10; }

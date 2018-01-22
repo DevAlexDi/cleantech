@@ -10,7 +10,7 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    arrows:false,
+                    arrows: false,
                     adaptiveHeight: true
                 }
             },
@@ -23,27 +23,26 @@ $(document).ready(function () {
             }
         ]
     });
-   
-    $('.sl-2').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+    $('.sl-2').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         $(".uniq-class").removeClass('active');
         $(".uniq-class").eq(nextSlide).addClass('active')
     });
-    
-    $('.uniq-class').click(function(){
+
+    $('.uniq-class').click(function () {
         $(".uniq-class").removeClass('active');
         $(this).addClass('active');
-        
-        if($(this).index()){
-            $('.sl-2').slick('slickGoTo',$(this).index()+1);
+
+        if ($(this).index()) {
+            $('.sl-2').slick('slickGoTo', $(this).index() + 1);
+        } else {
+            $('.sl-2').slick('slickGoTo', $(this).index());
         }
-        else{
-            $('.sl-2').slick('slickGoTo',$(this).index());
-        }
-        
+
     });
-    
-    
-       $('.slider-advisors').slick({
+
+
+    $('.slider-advisors').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
@@ -52,33 +51,33 @@ $(document).ready(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                   slidesToShow: 3
+                    slidesToShow: 3
                 }
             },
-             {
+            {
                 breakpoint: 992,
                 settings: {
-                   slidesToShow: 2
+                    slidesToShow: 2
                 }
             },
-             {
+            {
                 breakpoint: 768,
                 settings: {
-                   slidesToShow: 1
+                    slidesToShow: 1
                 }
             }
         ]
     });
-    
-    
-    
-    
-    
+
+
+
+
+
 
 
     var size = 50;
-    var newsContent= $('#what_we_offer .offer');
-    newsContent.each(function() {
+    var newsContent = $('#what_we_offer .offer');
+    newsContent.each(function () {
         var newsTextBlock = $(this).find('p.txt');
         var newsText = newsTextBlock.text();
         if (newsText.length > size) {
@@ -87,12 +86,11 @@ $(document).ready(function () {
         }
     });
 
-    $('#what_we_offer .offer .txt').click(function() {
+    $('#what_we_offer .offer .txt').click(function () {
         if (!$(this).hasClass('opened')) {
             $(this).text($(this).attr('data-full'));
             $(this).addClass('opened');
-        }
-        else {
+        } else {
             if ($(this).text().length > size) {
                 $(this).text($(this).text().substr(0, size));
             }
@@ -100,87 +98,110 @@ $(document).ready(function () {
         }
     });
 
-    
-    
+
+
     //=======================
-    
-    
-    var easy_pie_chart = {};
-    $('.circular-pie').each(function () {
-        var text_span = $(this).children('span');
-        $(this).easyPieChart($.extend(true, {}, easy_pie_chart, {
-            size: 500,
-            animate: 2000,
 
-            lineCap: 'square',
-            barColor: '#75be7a',
-            lineWidth: 32,
-            trackColor: '#fff',
-            scaleColor: false,
-            onStep: function (value) {
-                text_span.text('$' + (Math.ceil(value) * 600));
+
+
+
+    var glabal_flag_for_counter = true;
+    var win = $(window);
+    var scrFunc = function () {
+        var t = win.scrollTop(),
+            e = win.height();
+        $("[data-anim], .outher-counters").each(function (n, i) {
+            var r = $(i).offset().top,
+                s = t + .9 * e;
+            s > r ? $(i).attr("data-anim", "true") : true;
+
+
+
+
+            if ($(".outher-counters").attr('data-anim') == 'true' && glabal_flag_for_counter) {
+                glabal_flag_for_counter = false;
+                var easy_pie_chart = {};
+                $('.circular-pie').each(function () {
+                    var text_span = $(this).children('span');
+                    $(this).easyPieChart($.extend(true, {}, easy_pie_chart, {
+                        size: 500,
+                        animate: 2000,
+
+                        lineCap: 'square',
+                        barColor: '#75be7a',
+                        lineWidth: 32,
+                        trackColor: '#fff',
+                        scaleColor: false,
+                        onStep: function (value) {
+                            text_span.text('$' + (Math.ceil(value) * 600));
+
+                        }
+                    }));
+                });
+
+                var easy_pie_chart_2 = {};
+                $('.circular-pie_2').each(function () {
+                    var text_span = $(this).children('span');
+                    $(this).easyPieChart($.extend(true, {}, easy_pie_chart_2, {
+                        size: 150,
+                        animate: 2000,
+
+                        lineCap: 'square',
+                        barColor: '#75be7a',
+                        lineWidth: 14,
+                        trackColor: '#fff',
+                        scaleColor: false,
+                        onStep: function (value) {
+                            text_span.text('$' + ((Math.ceil(value) * 600) + 200));
+
+                        }
+                    }));
+                });
+                var easy_pie_chart_3 = {};
+                $('.circular-pie_3').each(function () {
+                    var text_span = $(this).children('span');
+                    $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
+                        size: 150,
+                        animate: 2000,
+                        lineCap: 'square',
+                        barColor: '#75be7a',
+                        lineWidth: 14,
+                        trackColor: '#fff',
+                        scaleColor: false,
+                        onStep: function (value) {
+                            text_span.text('$' + ((Math.ceil(value) * 600) + 400));
+
+                        }
+                    }));
+                });
+
+                var easy_pie_chart_4 = {};
+                $('.circular-pie_4').each(function () {
+                    var text_span = $(this).children('span');
+                    $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
+                        size: 150,
+                        animate: 2000,
+                        lineCap: 'square',
+                        barColor: '#75be7a',
+                        lineWidth: 14,
+                        trackColor: '#fff',
+                        scaleColor: false,
+                        onStep: function (value) {
+                            text_span.text('$' + ((Math.ceil(value) * 600)));
+
+                        }
+                    }));
+                });
 
             }
-        }));
-    });
-    
-    var easy_pie_chart_2 = {};
-    $('.circular-pie_2').each(function () {
-        var text_span = $(this).children('span');
-        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_2, {
-            size: 150,
-            animate: 2000,
+        })
+    }
+    scrFunc();
 
-            lineCap: 'square',
-            barColor: '#75be7a',
-            lineWidth: 14,
-            trackColor: '#fff',
-            scaleColor: false,
-            onStep: function (value) {
-                text_span.text('$' + ((Math.ceil(value) * 600) + 200));
 
-            }
-        }));
-    });
-    var easy_pie_chart_3 = {};
-    $('.circular-pie_3').each(function () {
-        var text_span = $(this).children('span');
-        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
-            size: 150,
-            animate: 2000,
-            lineCap: 'square',
-            barColor: '#75be7a',
-            lineWidth: 14,
-            trackColor: '#fff',
-            scaleColor: false,
-            onStep: function (value) {
-                text_span.text('$' + ((Math.ceil(value) * 600)+400));
+$(window).scroll(function(){
+    scrFunc();
+});
 
-            }
-        }));
-    });
-    
-    var easy_pie_chart_4 = {};
-    $('.circular-pie_4').each(function () {
-        var text_span = $(this).children('span');
-        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
-            size: 150,
-            animate: 2000,
-            lineCap: 'square',
-            barColor: '#75be7a',
-            lineWidth: 14,
-            trackColor: '#fff',
-            scaleColor: false,
-            onStep: function (value) {
-                text_span.text('$' + ((Math.ceil(value) * 600)));
 
-            }
-        }));
-    });
-    
-    
-    
-    
-    
-    
 });
