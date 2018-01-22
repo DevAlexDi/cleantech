@@ -345,11 +345,11 @@
         position: absolute;
         top: 50%;
         width: 1146px;
-        height: 2474px;
+        height: 2787px;
         transform: translateY(-50%);
         background-image: url(../img/hard-bg-2.png);
         background-repeat: no-repeat;
-        top: calc(50% + 34px); }
+        top: calc(50% - 46px); }
       .main-counters .rel-wrapp .right-side p {
         position: relative;
         z-index: 10; }
