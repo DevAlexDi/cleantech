@@ -20,6 +20,7 @@
   font-style: normal;
   font-weight: normal; }
 .advisors {
+  background: -webkit-gradient(linear, left top, right top, from(#28a994), to(#84d688));
   background: linear-gradient(90deg, #28a994, #84d688);
   padding: 95px 0px;
   position: relative;
@@ -31,12 +32,12 @@
     width: 100%;
     top: -1px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     max-width: 1500px;
     height: 45px;
     background: #fff;
     -webkit-box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4);
     box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4); }
   .advisors:after {
     content: "";
@@ -45,12 +46,12 @@
     width: 100%;
     bottom: -1px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     max-width: 1500px;
     height: 45px;
     background: #fff;
     -webkit-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
     box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4); }
   .advisors .pig {
     background-image: url(../img/pig.png);
@@ -76,7 +77,8 @@
           top: 100%;
           display: block;
           left: 50%;
-          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
           width: 70px;
           height: 3px;
           background: #fff; }
@@ -94,8 +96,11 @@
         border-radius: 50%;
         margin: 0 auto; }
       .advisors .pig .m-w-1330 .flex-one {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap; }
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
       .advisors .pig .m-w-1330 .m-w-23 {
         background-color: #fff;
         padding-top: 25px; }
@@ -119,6 +124,7 @@
 
 .how-we-assess {
   width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#28a994), to(#84d688));
   background: linear-gradient(90deg, #28a994, #84d688);
   position: relative;
   overflow: hidden;
@@ -130,12 +136,12 @@
     width: 100%;
     top: -1px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     max-width: 1500px;
     height: 45px;
     background: #fff;
     -webkit-box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4);
     box-shadow: -5px 10px 36px -5px rgba(0, 0, 0, 0.4); }
   .how-we-assess:after {
     content: "";
@@ -144,12 +150,12 @@
     width: 100%;
     bottom: -1px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     max-width: 1500px;
     height: 45px;
     background: #fff;
     -webkit-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
     box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4); }
   .how-we-assess h3 {
     font-family: "BebasNeueReg";
@@ -165,12 +171,15 @@
       top: 100%;
       display: block;
       left: 50%;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       width: 70px;
       height: 3px;
       background: #fff; }
   .how-we-assess .flex-1 {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1330px;
     padding-top: 70px; }
@@ -178,16 +187,25 @@
       width: 25%;
       padding-right: 35px; }
     .how-we-assess .flex-1 .flex-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       width: 75%; }
       .how-we-assess .flex-1 .flex-2 .box-m-w-33 {
         width: 33%;
         padding: 0px 40px; }
         .how-we-assess .flex-1 .flex-2 .box-m-w-33 .flex-3 {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: space-between;
-          align-items: flex-start; }
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
           .how-we-assess .flex-1 .flex-2 .box-m-w-33 .flex-3 h3 {
             font-family: "BebasNeueReg";
             font-size: 30px;
@@ -217,9 +235,9 @@
   border-radius: 50px;
   font-family: "BebasNeueReg";
   color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#309081), to(#56b855));
   background: linear-gradient(90deg, #309081, #56b855);
   -webkit-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4);
   box-shadow: -5px -10px 36px -5px rgba(0, 0, 0, 0.4); }
   .butt-apply-now:hover {
     color: #fff; }
