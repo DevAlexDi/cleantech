@@ -29,7 +29,7 @@
     .advisors .pig .wraper {
       width: 25%;
       padding: 0px 25px;
-      posithion: relative; }
+      margin-bottom: 25px; }
     .advisors .pig .m-w-1330 {
       margin: 0 auto;
       max-width: 1330px; }
@@ -65,7 +65,7 @@
         margin: 0 auto; }
       .advisors .pig .m-w-1330 .flex-one {
         display: flex;
-        justify-content: space-between; }
+        flex-wrap: wrap; }
       .advisors .pig .m-w-1330 .m-w-23 {
         background-color: #fff;
         padding-top: 25px; }
