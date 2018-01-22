@@ -104,6 +104,7 @@ $dark_blue: #0c142b;
 
 #timeline {
   padding-top: 100px;
+  padding-bottom: 40px;
   position: relative;
 
   &:before {
@@ -363,6 +364,9 @@ $dark_blue: #0c142b;
   #timeline .timeline_block:before {
     margin-left: 6px;
     left: 0;
+  }
+  #timeline .timeline_block {
+    margin: 40px 0;
   }
   #timeline .timeline_block li {
     margin: 0 0 20px;
