@@ -402,7 +402,7 @@ $dark_blue: #0c142b;
 
 #checkpoints {
   .zag {
-    width: 420px;
+    max-width: 420px;
   }
 
   .cp_timeline {
@@ -720,6 +720,10 @@ $dark_blue: #0c142b;
   }
   #checkpoints .cp_timeline li {
     margin: 85px auto;
+
+    &:nth-child(2) {
+      margin: 185px auto;
+    }
   }
   #checkpoints .cp_timeline li:before {
     left: -48px;
@@ -727,6 +731,26 @@ $dark_blue: #0c142b;
   }
   #checkpoints .cp_timeline li .circles {
     margin: 0 auto;
+  }
+  #checkpoints .cp_timeline li:nth-child(1) .cp_tl,
+  #checkpoints .cp_timeline li:nth-child(3) .cp_tl {
+    left: auto;
+    right: 50%;
+    margin-right: 65px;
+    bottom: auto;
+    top: -25px;
+    width: 40%;
+    flex-direction: column-reverse;
+
+    p, span {
+      text-align: right;
+    }
+  }
+  #checkpoints .cp_timeline li:nth-child(2) .cp_tl {
+    top: -20px;
+    width: 40%;
+    left: 50%;
+    margin-left: 65px;
   }
 }
 @media (max-width: 767px) {
@@ -793,5 +817,41 @@ $dark_blue: #0c142b;
   #what_we_offer .offer_flex .offer {
     width: 100%;
     margin-top: 50px;
+  }
+
+  #checkpoints .cp_timeline:before {
+    margin-left: 47px;
+    left: 0;
+  }
+  #checkpoints .cp_timeline li:before {
+    left: 0;
+    margin-left: 0;
+  }
+  #checkpoints .cp_timeline li .cp_tl {
+    position: relative;
+  }
+  #checkpoints .cp_timeline li .circles {
+    margin: 30px;
+  }
+  #checkpoints .cp_timeline li:nth-child(2) {
+    margin: 0;
+  }
+  #checkpoints .cp_timeline li:nth-child(2) .cp_tl {
+    width: 50%;
+    left: 0;
+    margin-left: 125px;
+    top: -85px;
+  }
+  #checkpoints .cp_timeline li:nth-child(1) .cp_tl,
+  #checkpoints .cp_timeline li:nth-child(3) .cp_tl {
+    left: 0;
+    right: auto;
+    margin-left: 125px;
+    width: 50%;
+    top: -85px;
+
+    p, span {
+      text-align: left;
+    }
   }
 }

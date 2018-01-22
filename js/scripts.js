@@ -119,4 +119,85 @@ $(document).ready(function () {
 
     
     
+    //=======================
+    
+    
+    var easy_pie_chart = {};
+    $('.circular-pie').each(function () {
+        var text_span = $(this).children('span');
+        $(this).easyPieChart($.extend(true, {}, easy_pie_chart, {
+            size: 500,
+            animate: 2000,
+
+            lineCap: 'square',
+            barColor: '#75be7a',
+            lineWidth: 32,
+            trackColor: '#fff',
+            scaleColor: false,
+            onStep: function (value) {
+                text_span.text('$' + (Math.ceil(value) * 600));
+
+            }
+        }));
+    });
+    
+    var easy_pie_chart_2 = {};
+    $('.circular-pie_2').each(function () {
+        var text_span = $(this).children('span');
+        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_2, {
+            size: 150,
+            animate: 2000,
+
+            lineCap: 'square',
+            barColor: '#75be7a',
+            lineWidth: 14,
+            trackColor: '#fff',
+            scaleColor: false,
+            onStep: function (value) {
+                text_span.text('$' + ((Math.ceil(value) * 600) + 200));
+
+            }
+        }));
+    });
+    var easy_pie_chart_3 = {};
+    $('.circular-pie_3').each(function () {
+        var text_span = $(this).children('span');
+        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
+            size: 150,
+            animate: 2000,
+            lineCap: 'square',
+            barColor: '#75be7a',
+            lineWidth: 14,
+            trackColor: '#fff',
+            scaleColor: false,
+            onStep: function (value) {
+                text_span.text('$' + ((Math.ceil(value) * 600)+400));
+
+            }
+        }));
+    });
+    
+    var easy_pie_chart_4 = {};
+    $('.circular-pie_4').each(function () {
+        var text_span = $(this).children('span');
+        $(this).easyPieChart($.extend(true, {}, easy_pie_chart_3, {
+            size: 150,
+            animate: 2000,
+            lineCap: 'square',
+            barColor: '#75be7a',
+            lineWidth: 14,
+            trackColor: '#fff',
+            scaleColor: false,
+            onStep: function (value) {
+                text_span.text('$' + ((Math.ceil(value) * 600)));
+
+            }
+        }));
+    });
+    
+    
+    
+    
+    
+    
 });

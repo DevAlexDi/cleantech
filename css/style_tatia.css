@@ -283,7 +283,7 @@
           border-color: transparent #90dc5a transparent transparent !important; }
 
 #checkpoints .zag {
-  width: 420px; }
+  max-width: 420px; }
 #checkpoints .cp_timeline {
   display: flex;
   justify-content: space-between;
@@ -522,13 +522,35 @@
 
   #checkpoints .cp_timeline li {
     margin: 85px auto; }
+    #checkpoints .cp_timeline li:nth-child(2) {
+      margin: 185px auto; }
 
   #checkpoints .cp_timeline li:before {
     left: -48px;
     margin-left: 50%; }
 
   #checkpoints .cp_timeline li .circles {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #checkpoints .cp_timeline li:nth-child(1) .cp_tl,
+  #checkpoints .cp_timeline li:nth-child(3) .cp_tl {
+    left: auto;
+    right: 50%;
+    margin-right: 65px;
+    bottom: auto;
+    top: -25px;
+    width: 40%;
+    flex-direction: column-reverse; }
+    #checkpoints .cp_timeline li:nth-child(1) .cp_tl p, #checkpoints .cp_timeline li:nth-child(1) .cp_tl span,
+    #checkpoints .cp_timeline li:nth-child(3) .cp_tl p,
+    #checkpoints .cp_timeline li:nth-child(3) .cp_tl span {
+      text-align: right; }
+
+  #checkpoints .cp_timeline li:nth-child(2) .cp_tl {
+    top: -20px;
+    width: 40%;
+    left: 50%;
+    margin-left: 65px; } }
 @media (max-width: 767px) {
   #who_should_apply ul.icons li {
     width: 100%; }
@@ -588,6 +610,41 @@
 
   #what_we_offer .offer_flex .offer {
     width: 100%;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  #checkpoints .cp_timeline:before {
+    margin-left: 47px;
+    left: 0; }
+
+  #checkpoints .cp_timeline li:before {
+    left: 0;
+    margin-left: 0; }
+
+  #checkpoints .cp_timeline li .cp_tl {
+    position: relative; }
+
+  #checkpoints .cp_timeline li .circles {
+    margin: 30px; }
+
+  #checkpoints .cp_timeline li:nth-child(2) {
+    margin: 0; }
+
+  #checkpoints .cp_timeline li:nth-child(2) .cp_tl {
+    width: 50%;
+    left: 0;
+    margin-left: 125px;
+    top: -85px; }
+
+  #checkpoints .cp_timeline li:nth-child(1) .cp_tl,
+  #checkpoints .cp_timeline li:nth-child(3) .cp_tl {
+    left: 0;
+    right: auto;
+    margin-left: 125px;
+    width: 50%;
+    top: -85px; }
+    #checkpoints .cp_timeline li:nth-child(1) .cp_tl p, #checkpoints .cp_timeline li:nth-child(1) .cp_tl span,
+    #checkpoints .cp_timeline li:nth-child(3) .cp_tl p,
+    #checkpoints .cp_timeline li:nth-child(3) .cp_tl span {
+      text-align: left; } }
 
 /*# sourceMappingURL=style_tatia.css.map */

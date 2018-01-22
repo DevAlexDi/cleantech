@@ -286,4 +286,120 @@
             position: relative;
             left: 1px; }
 
+<<<<<<< HEAD
+=======
+.main-counters {
+  padding: 260px 0 120px 0; }
+  .main-counters .rel-wrapp {
+    position: relative;
+    display: flex; }
+    .main-counters .rel-wrapp .left-side {
+      padding-top: 60px;
+      width: 47%;
+      position: relative;
+      z-index: 10; }
+      .main-counters .rel-wrapp .left-side .for-flex-line {
+        display: flex;
+        margin-bottom: 100px; }
+      .main-counters .rel-wrapp .left-side .main-counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .main-counters .rel-wrapp .left-side .main-counter p {
+          color: #0c142b;
+          font-size: 65px;
+          font-family: "BebasNeueReg";
+          font-weight: bold; }
+        .main-counters .rel-wrapp .left-side .main-counter span {
+          font-family: "BebasNeueReg";
+          font-size: 70px;
+          color: #fd7400;
+          font-weight: bold; }
+      .main-counters .rel-wrapp .left-side .circular-pie {
+        line-height: normal !important;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: column; }
+      .main-counters .rel-wrapp .left-side canvas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .main-counters .rel-wrapp .right-side {
+      padding-top: 200px;
+      width: 53%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      position: relative; }
+      .main-counters .rel-wrapp .right-side .hard-bg-2 {
+        left: -147px;
+        position: absolute;
+        top: 50%;
+        width: 1146px;
+        height: 2474px;
+        transform: translateY(-50%);
+        background-image: url(../img/hard-bg-2.png);
+        background-repeat: no-repeat;
+        top: calc(50% + 34px); }
+      .main-counters .rel-wrapp .right-side p {
+        position: relative;
+        z-index: 10; }
+      .main-counters .rel-wrapp .right-side .hh {
+        color: #fff;
+        font-size: 18px;
+        font-family: "Montserrat-Regular";
+        top: 40px; }
+      .main-counters .rel-wrapp .right-side .outher-counters {
+        position: relative;
+        top: 61px; }
+        .main-counters .rel-wrapp .right-side .outher-counters .pie {
+          line-height: normal !important;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .main-counters .rel-wrapp .right-side .outher-counters .pie canvas {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+          .main-counters .rel-wrapp .right-side .outher-counters .pie.circular-pie_3 canvas {
+            transform: translateX(-50%) rotate(200deg); }
+          .main-counters .rel-wrapp .right-side .outher-counters .pie.circular-pie_4 canvas {
+            transform: translateX(-50%) rotate(262deg); }
+        .main-counters .rel-wrapp .right-side .outher-counters .one-counter {
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px; }
+          .main-counters .rel-wrapp .right-side .outher-counters .one-counter span {
+            display: block;
+            font-family: "BebasNeueReg";
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold; }
+          .main-counters .rel-wrapp .right-side .outher-counters .one-counter p {
+            padding-left: 20px;
+            position: relative;
+            z-index: 10;
+            color: #fff;
+            font-size: 24px;
+            font-family: "BebasNeueReg"; }
+
+#what_we_offer {
+  position: relative;
+  z-index: 10; }
+
+>>>>>>> origin/master
 /*# sourceMappingURL=style.css.map */
