@@ -108,3 +108,27 @@
         }
     }
 }}
+.how-we-assess{
+    width: 100%;
+    background: linear-gradient(90deg, #28a994, #84d688);
+    .flex-1{
+        margin: 0 auto;
+        display: flex;
+        max-width: 1330px;
+        .how-we{
+            width: 25%;
+        }
+        .flex-2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 75%;
+            .box-m-w-33{
+                width: 33%;
+                padding: 0px 40px;
+                .flex-3{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
