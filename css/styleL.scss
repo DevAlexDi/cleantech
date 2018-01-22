@@ -115,14 +115,27 @@
         font-family: "BebasNeueReg";
         font-size: 80px;
         color: #fefeff;
+        position: relative;
+        &.go-to {
+            content: "";
+            position: absolute;
+            top: 100%;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background: #fff;
+    }
     }
 
     .flex-1{
         margin: 0 auto;
         display: flex;
         max-width: 1330px;
-        .how-we{
+        .how-we-1{
             width: 25%;
+            padding-right: 35px;
         }
         .flex-2{
             display: flex;
@@ -162,5 +175,21 @@
         font-size: 18px;
         font-family: "Montserrat-Regular";
         color: #fefefe;
+    }
+}
+.butt-apply-now {
+    width: 295px;
+    margin: 0 auto;
+    margin-top: 45px;
+    text-align: center;
+    padding: 15px 0;
+    border: 2px solid #fff;
+    display: block;
+    border-radius: 50px;
+    font-family: "BebasNeueReg";
+    color: #fff;
+    background: linear-gradient(90deg, #309081, #56b855);
+    &:hover {
+        color: #fff;
     }
 }
