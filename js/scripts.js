@@ -284,4 +284,18 @@ $(document).ready(function () {
     
     
 
+
+
+
+    $('.ac_tl li').click(function() {
+        if ($(this).hasClass('opened')) {
+            $(this).find('p').slideUp();
+            $(this).removeClass('opened');
+        }
+        else {
+            $(this).addClass('opened');
+            $(this).find('p').slideDown();
+        }
+    });
+
 });
