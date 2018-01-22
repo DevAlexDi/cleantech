@@ -272,12 +272,23 @@
     left: 0; }
 
   #timeline .timeline_block li {
-    margin: 0;
+    margin: 0 0 20px;
     width: auto;
     height: auto;
-    position: relative; }
+    border: 0;
+    border-radius: 0;
+    background: transparent; }
     #timeline .timeline_block li:before {
-      content: ''; }
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      background: white;
+      border: 3px solid #dfe5ec;
+      border-radius: 14px; }
 
   #timeline .timeline_block li:nth-child(even) div {
     flex-direction: column-reverse; }
@@ -294,6 +305,10 @@
     #timeline .timeline_block li:nth-child(even) div span, #timeline .timeline_block li:nth-child(even) div p,
     #timeline .timeline_block li:nth-child(odd) div span,
     #timeline .timeline_block li:nth-child(odd) div p {
-      text-align: left; } }
+      text-align: left; }
+      #timeline .timeline_block li:nth-child(even) div span br, #timeline .timeline_block li:nth-child(even) div p br,
+      #timeline .timeline_block li:nth-child(odd) div span br,
+      #timeline .timeline_block li:nth-child(odd) div p br {
+        display: none; } }
 
 /*# sourceMappingURL=style_tatia.css.map */

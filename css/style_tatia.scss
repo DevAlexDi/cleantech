@@ -365,13 +365,24 @@ $dark_blue: #0c142b;
     left: 0;
   }
   #timeline .timeline_block li {
-    margin: 0;
+    margin: 0 0 20px;
     width: auto;
     height: auto;
-    position: relative;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
 
     &:before {
       content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      background: white;
+      border: 3px solid #dfe5ec;
+      border-radius: 14px;
     }
   }
   #timeline .timeline_block li:nth-child(even) div {
@@ -389,6 +400,10 @@ $dark_blue: #0c142b;
 
     span, p {
       text-align: left;
+
+      br {
+        display: none;
+      }
     }
   }
 }
