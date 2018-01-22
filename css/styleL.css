@@ -118,7 +118,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1330px; }
+    max-width: 1330px;
+    padding-top: 70px; }
     .how-we-assess .flex-1 .how-we-1 {
       width: 25%;
       padding-right: 35px; }
