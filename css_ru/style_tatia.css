@@ -50,7 +50,7 @@
       margin-top: 50px;
       margin-bottom: 55px; }
       #who_should_apply ul.icons li {
-        font: bold 18px Montserrat-Regular;
+        font: bold 14px Montserrat-Regular;
         color: #777777;
         text-align: center;
         width: 21%;
@@ -77,7 +77,7 @@
       -ms-flex-pack: distribute;
           justify-content: space-around;
       color: #0c142b;
-      font: 30px BebasNeueReg; }
+      font: 22px BebasNeueReg; }
       #who_should_apply ul.texts li {
         width: 25%;
         text-align: center;
@@ -525,7 +525,7 @@
         border-color: transparent #32927f transparent transparent !important; }
       #accelerator_tl .ac_tl li img {
         position: absolute;
-        top: -27px;
+        top: -43px;
         left: 21px; }
       #accelerator_tl .ac_tl li span {
         padding-left: 10%; }
