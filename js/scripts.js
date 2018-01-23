@@ -131,7 +131,7 @@ $(document).ready(function () {
     var scrFunc = function () {
         var t = win.scrollTop(),
             e = win.height();
-        $("[data-anim], .outher-counters, .main-counter").each(function (n, i) {
+        $("[data-anim], .outher-counters, .main-counter, .slider-advisors, .flex-one, .timeline_block, .offer_flex, .ac_tl, .cp_timeline").each(function (n, i) {
             var r = $(i).offset().top,
                 s = t + .9 * e;
             s > r ? $(i).attr("data-anim", "true") : true;
