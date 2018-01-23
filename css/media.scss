@@ -1,6 +1,6 @@
 @media (max-width: 1600px) {
     #who_should_apply .zag {
-    max-width: 270px;
+
             font-size: 61px
 }
     
@@ -16,12 +16,12 @@
         font-size: 23px;
     }
     #timeline .zag{
-        max-width: 169px;
+        
             font-size: 60px;
     }
     
     #what_we_offer .zag {
-        max-width: 300px;
+        
             font-size: 46px;
     }
     #what_we_offer .offer_flex .offer .txt{
@@ -50,8 +50,13 @@
         padding: 0 20px;
     }
     
-    
-    
+    #accelerator_tl .ac_tl li img {
+    position: absolute;
+        top: -45px;
+    }
+    #accelerator_tl .ac_tl li div{
+        font-size: 14px;
+    }
     
     
     
@@ -72,6 +77,20 @@
     .how-we-assess {
     padding: 30px 100px;
 }
+}
+
+@media (max-width: 1400px) {
+    #accelerator_tl .ac_tl li span {
+    padding-left: 6%;
+}
+    #accelerator_tl .ac_tl li div:after{
+        right: 5px;
+    }
+    .how-we-assess{
+        .butt-apply-now{
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 1330px) {
     .main-counters .rel-wrapp .right-side .hh{
@@ -213,9 +232,15 @@
     .max_width_container{
         padding: 0 50px;
     }
+    .how-we-assess{
+        .butt-apply-now{
+           width: 295px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
+    
     .footer .for-flex-footer .soc-set-links {
         display: flex;
     }
@@ -269,6 +294,9 @@
     .sec-fixed-menu .menu-wr .menu ul a {
         font-size: 15px;
         padding: 25px 5px;
+    }
+    .how-we-assess {
+        padding: 30px 50px;
     }
 }
 
@@ -455,7 +483,9 @@
         margin: 0 auto;
     }
     
-    
+    .how-we-assess {
+    padding: 30px 15px;
+}
     
     
     

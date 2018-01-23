@@ -1,6 +1,5 @@
 @media (max-width: 1600px) {
   #who_should_apply .zag {
-    max-width: 270px;
     font-size: 61px; }
 
   #who_should_apply ul.icons li {
@@ -13,11 +12,9 @@
     font-size: 23px; }
 
   #timeline .zag {
-    max-width: 169px;
     font-size: 60px; }
 
   #what_we_offer .zag {
-    max-width: 300px;
     font-size: 46px; }
 
   #what_we_offer .offer_flex .offer .txt {
@@ -40,7 +37,14 @@
     font-size: 21px; }
 
   .how-we-assess .flex-1 .flex-2 .box-m-w-33 {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+
+  #accelerator_tl .ac_tl li img {
+    position: absolute;
+    top: -45px; }
+
+  #accelerator_tl .ac_tl li div {
+    font-size: 14px; } }
 @media (max-width: 1480px) {
   .sec-lvl-2 {
     padding: 0 35px; }
@@ -53,6 +57,15 @@
 
   .how-we-assess {
     padding: 30px 100px; } }
+@media (max-width: 1400px) {
+  #accelerator_tl .ac_tl li span {
+    padding-left: 6%; }
+
+  #accelerator_tl .ac_tl li div:after {
+    right: 5px; }
+
+  .how-we-assess .butt-apply-now {
+    width: 100%; } }
 @media (max-width: 1330px) {
   .main-counters .rel-wrapp .right-side .hh {
     font-size: 15px; } }
@@ -188,7 +201,10 @@
     font-size: 16px; }
 
   .max_width_container {
-    padding: 0 50px; } }
+    padding: 0 50px; }
+
+  .how-we-assess .butt-apply-now {
+    width: 295px; } }
 @media (max-width: 991px) {
   .footer .for-flex-footer .soc-set-links {
     display: -webkit-box;
@@ -242,7 +258,10 @@
 
   .sec-fixed-menu .menu-wr .menu ul a {
     font-size: 15px;
-    padding: 25px 5px; } }
+    padding: 25px 5px; }
+
+  .how-we-assess {
+    padding: 30px 50px; } }
 @media (max-width: 767px) {
   .footer {
     padding-top: 30px;
@@ -404,6 +423,9 @@
   .parteners .flex-partners .one-partner {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .how-we-assess {
+    padding: 30px 15px; } }
 
 /*# sourceMappingURL=media.css.map */
