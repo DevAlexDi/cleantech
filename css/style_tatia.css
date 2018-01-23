@@ -582,7 +582,7 @@
 @media (max-width: 1480px) {
   .max_width_container {
     width: 100%;
-    padding: 0 35px; }
+    padding: 0 100px; }
 
   #who_should_apply ul.icons li .dots {
     max-width: 150px;

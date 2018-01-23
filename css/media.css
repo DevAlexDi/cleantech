@@ -1,3 +1,46 @@
+@media (max-width: 1600px) {
+  #who_should_apply .zag {
+    max-width: 270px;
+    font-size: 61px; }
+
+  #who_should_apply ul.icons li {
+    font-size: 14px; }
+
+  #who_should_apply .center_text {
+    font-size: 16px; }
+
+  #who_should_apply ul.texts {
+    font-size: 23px; }
+
+  #timeline .zag {
+    max-width: 169px;
+    font-size: 60px; }
+
+  #what_we_offer .zag {
+    max-width: 300px;
+    font-size: 46px; }
+
+  #what_we_offer .offer_flex .offer .txt {
+    font-size: 16px; }
+
+  #what_we_offer .offer_flex .offer .title {
+    font-size: 21px; }
+
+  .main-counters .rel-wrapp .right-side .outher-counters .one-counter p {
+    font-size: 20px; }
+
+  #accelerator_tl p {
+    font-size: 15px; }
+
+  .zag {
+    font-size: 39px;
+    text-align: center; }
+
+  .how-we-assess .flex-1 .flex-2 .box-m-w-33 .flex-3 h3 {
+    font-size: 21px; }
+
+  .how-we-assess .flex-1 .flex-2 .box-m-w-33 {
+    padding: 0 20px; } }
 @media (max-width: 1480px) {
   .sec-lvl-2 {
     padding: 0 35px; }
@@ -5,8 +48,11 @@
   .sec-lvl-2 .for-m-w:before {
     display: none; }
 
+  #checkpoints .cp_timeline li .cp_tl p {
+    font: bold 15px Montserrat-Regular; }
+
   .how-we-assess {
-    padding: 30px 15px; } }
+    padding: 30px 100px; } }
 @media (max-width: 1330px) {
   .main-counters .rel-wrapp .right-side .hh {
     font-size: 15px; } }
@@ -127,8 +173,8 @@
     padding-top: 30px; }
 
   .main-counters .rel-wrapp .left-side canvas {
-    width: 380px;
-    height: 380px; }
+    width: 380px !important;
+    height: 380px !important; }
 
   .main-counters .rel-wrapp .left-side .main-counter p {
     font-size: 40px; }
@@ -136,7 +182,13 @@
   .main-counters .rel-wrapp .left-side .circular-pie {
     width: 380px !important;
     height: 380px !important;
-    line-height: normal !important; } }
+    line-height: normal !important; }
+
+  .sec-fixed-menu .menu-wr .menu ul a {
+    font-size: 16px; }
+
+  .max_width_container {
+    padding: 0 50px; } }
 @media (max-width: 991px) {
   .footer .for-flex-footer .soc-set-links {
     display: -webkit-box;
