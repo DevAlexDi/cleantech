@@ -535,11 +535,10 @@
       display: block;
       padding: 1rem 2rem;
       border-radius: 5px;
-      max-width: 300px;
+      width: 300px;
       outline: none;
       background: #22918b;
       border: none;
-      width: 100%;
       font-family: "Montserrat-Regular";
       letter-spacing: 1px;
       color: #fff;
@@ -574,7 +573,7 @@
       top: 5px;
       width: 18px;
       height: 12px;
-      background: url(../img/en.png);
+      background: url(../img/ru.png);
       background-size: cover;
       background-repeat: no-repeat; }
     .for-flag .flag-vr:after {
@@ -668,7 +667,7 @@
             color: #56b754; }
 
 .sec-lvl-16 {
-  padding-top: 90px; }
+  padding-top: 142px; }
   .sec-lvl-16 .for-m-w {
     max-width: 900px;
     margin: 0 auto; }
