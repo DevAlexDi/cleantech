@@ -131,15 +131,15 @@ $(document).ready(function () {
     var scrFunc = function () {
         var t = win.scrollTop(),
             e = win.height();
-        $("[data-anim], .outher-counters").each(function (n, i) {
+        $("[data-anim], .outher-counters, .main-counter").each(function (n, i) {
             var r = $(i).offset().top,
                 s = t + .9 * e;
             s > r ? $(i).attr("data-anim", "true") : true;
 
 
 
-
-            if ($(".outher-counters").attr('data-anim') == 'true' && glabal_flag_for_counter) {
+            
+            if ($(".outher-counters").attr('data-anim') == 'true' && glabal_flag_for_counter || $(".main-counter").attr('data-anim') == 'true' && glabal_flag_for_counter && $(window).width() < 1200) {
                 glabal_flag_for_counter = false;
                 var easy_pie_chart = {};
                 $('.circular-pie').each(function () {
